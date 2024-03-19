@@ -1,4 +1,5 @@
 import "./contact.css";
+
 export default function About() {
   return (
     <section id="contact" className="contact">
@@ -6,7 +7,7 @@ export default function About() {
         <div class="contact__content">
           <div class="contact__title">
             <p>contact</p>
-            <h3>Don't be shy! Hit me up! 👇</h3>
+            <h3>Don&apos;t be shy! Hit me up! 👇</h3>
           </div>
           <div class="contact__icons">
             <div class="contact__icon-box">

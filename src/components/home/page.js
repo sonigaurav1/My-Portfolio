@@ -9,9 +9,14 @@ export default function Home() {
           <div className="home-main">
             <div className="home-text">
               <h1>Front-End React Developer</h1>
-              <Image src="/wavingHand.png" width={96} height={96}></Image>
+              <Image
+                src="/wavingHand.png"
+                width={96}
+                height={96}
+                alt="waving hand"
+              ></Image>
               <p>
-                Hi, I'm Gaurav Soni. A passionate Front-end React Developer
+                Hi, I&apos;m Gaurav Soni. A passionate Front-end React Developer
                 based in Ramdhuni, Nepal. 📍
               </p>
               <span>
@@ -78,7 +83,12 @@ export default function Home() {
                     <path d="M26.37,26l-8.795-12.822l0.015,0.012L25.52,4h-2.65l-6.46,7.48L11.28,4H4.33l8.211,11.971L12.54,15.97L3.88,26h2.65 l7.182-8.322L19.42,26H26.37z M10.23,6l12.34,18h-2.1L8.12,6H10.23z"></path>
                   </svg>
                 </a>
-                <a aria-label="instagram" rel="noreferrer" target="_blank" href="https://www.instagram.com/gauravsoni123_official/">
+                <a
+                  aria-label="instagram"
+                  rel="noreferrer"
+                  target="_blank"
+                  href="https://www.instagram.com/gauravsoni123_official/"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     x="0px"
@@ -97,6 +107,7 @@ export default function Home() {
               src="/computer.avif"
               width={400}
               height={300}
+              alt="computer in a table"
             ></Image>
           </div>
           <div className="mySkills">
@@ -104,33 +115,43 @@ export default function Home() {
             <div className="skillsLogo">
               <ul>
                 <li>
-                  <img
+                  <Image
                     src="https://skillicons.dev/icons?i=html,css"
                     alt="skill-icon"
+                    width={50}
+                    height={50}
                   />
                 </li>
                 <li>
-                  <img
+                  <Image
                     src="https://skillicons.dev/icons?i=js,ts"
                     alt="skill-icon"
+                    width={50}
+                    height={50}
                   />
                 </li>
                 <li>
-                  <img
+                  <Image
                     src="https://skillicons.dev/icons?i=react,next"
                     alt="skill-icon"
+                    width={50}
+                    height={50}
                   />
                 </li>
                 <li>
-                  <img
+                  <Image
                     src="https://skillicons.dev/icons?i=tailwind,github"
                     alt="skill-icon"
+                    width={50}
+                    height={50}
                   />
                 </li>
                 <li>
-                  <img
+                  <Image
                     src="https://skillicons.dev/icons?i=vite,firebase"
                     alt="skill-icon"
+                    width={50}
+                    height={50}
                   />
                 </li>
               </ul>

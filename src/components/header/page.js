@@ -26,7 +26,7 @@ export default function NavigationBar() {
         {navLinks.map(({ name, href }) => {
           const isActive = pathname.startsWith(href);
           return (
-            <li onClick={() => scrollToSection(name)}>
+            <li onClick={() => scrollToSection(name)} key={name}>
               <Link href={href} key={name} className={isActive ? "active" : ""}>
                 {name}
               </Link>
