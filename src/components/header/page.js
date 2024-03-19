@@ -81,18 +81,18 @@ export default function NavigationBar() {
             <path d="M6 6l12 12"></path>
           </svg>
         </span>
-        <ul>
+        <ul onClick={() => handleMenuClose()}>
           <li>
-            <a onClick={() => handleMenuClose()} href="#home">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li>
-            <a onClick={() => handleMenuClose()} href="#about">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
-            <a onClick={() => handleMenuClose()} href="#projects">Projects</a>
+            <a href="#projects">Projects</a>
           </li>
           <li>
-            <a onClick={() => handleMenuClose()} href="#contact">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </div>

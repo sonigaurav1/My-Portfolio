@@ -79,32 +79,21 @@
     width: 90%;
   }
 }
+
 @media (max-width: 900px) {
   .home-text img {
-    right: 3rem;
+    height: 5.5rem;
+    right: 5rem;
+    top: 8.9rem;
+    width: 5.5rem;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 480px) {
   .home-text img {
-    right: 1.7rem;
-  }
-}
-@media (max-width: 380px) {
-  .home-text img {
-    right: 3rem;
-  }
-}
-@media (max-width: 400px) {
-  .home-text img {
-    right: 3rem;
-  }
-}
-@media (max-width: 500px) {
-  .home-text img {
-    height: 4.5rem;
-    right: 4.9rem;
-    top: 6.9rem;
-    width: 4.5rem;
+    height: 3.5rem;
+    right: 1.9rem;
+    top: 7.5rem;
+    width: 3.5rem;
   }
 }
 .home-text p {

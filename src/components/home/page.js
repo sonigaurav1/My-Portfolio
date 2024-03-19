@@ -14,6 +14,7 @@ export default function Home() {
                 width={96}
                 height={96}
                 alt="waving hand"
+                className="waving-hand"
               ></Image>
               <p>
                 Hi, I&apos;m Gaurav Soni. A passionate Front-end React Developer
