@@ -74,6 +74,12 @@
   top: 8.7rem;
   width: 6rem;
 }
+@media (max-width: 500px) {
+  .home-img {
+    height: auto;
+    width: 90%;
+  }
+}
 @media (max-width: 900px) {
   .home-text img {
     right: 3rem;

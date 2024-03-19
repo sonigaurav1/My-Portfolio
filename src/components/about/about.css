@@ -53,6 +53,13 @@
     height: 35rem;
     width: 41rem;
   }
+  @media (max-width: 460px) {
+    .img-side__main-img {
+      height: 25rem;
+      width: 90%;
+      object-fit: cover;
+    }
+  }
   @media (max-width: 1070px) {
     .img-side__main-img {
       margin-bottom: 3.5rem;

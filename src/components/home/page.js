@@ -108,6 +108,7 @@ export default function Home() {
               width={400}
               height={300}
               alt="computer in a table"
+              className="home-img"
             ></Image>
           </div>
           <div className="mySkills">
