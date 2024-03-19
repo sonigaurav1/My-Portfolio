@@ -115,7 +115,7 @@ export default function Home() {
             <div className="skillsLogo">
               <ul>
                 <li>
-                  <Image
+                  <img
                     src="https://skillicons.dev/icons?i=html,css"
                     alt="skill-icon"
                     width={50}
@@ -123,7 +123,7 @@ export default function Home() {
                   />
                 </li>
                 <li>
-                  <Image
+                  <img
                     src="https://skillicons.dev/icons?i=js,ts"
                     alt="skill-icon"
                     width={50}

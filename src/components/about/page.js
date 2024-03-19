@@ -10,17 +10,21 @@ export default function About() {
               src="/working-emoji.png"
               alt="emoji"
               class="work-emoji"
+              width={50}
+              height={50}
             />
             <Image
               src="/about-img.webp"
               alt="mee"
               class="img-side__main-img"
+              width={50}
+              height={50}
             />
             <span>
-              <Image
+              {/* <Image
                 src="/static/media/text2.3d5aa6ba2d0632bb4e0572631c3f9dc2.svg"
                 alt="text"
-              />
+              /> */}
             </span>
           </div>
           <div class="text-side">
