@@ -2,6 +2,11 @@
   background-color: #f9f9f9;
   padding: 15rem 0;
 }
+@media (max-width: 1070px) {
+  .projects {
+    padding: 8rem 0;
+  }
+}
 .new-projects {
   color: #2d2e32;
   font-size: 2.6rem;

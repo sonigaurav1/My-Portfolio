@@ -14,11 +14,13 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 200;
 }
 .logo {
   color: #2d2e32;
   cursor: pointer;
+  font-weight: 700;
+  font-size: 2.3rem;
 }
 nav ul {
   display: flex;
@@ -40,4 +42,61 @@ nav ul a.active{
 nav ul a:hover{
     color: rgb(76, 115, 255);
 }
+.mobile-menu {
+  cursor: pointer;
+  display: none;
+  font-size: 2.3rem;
+}
+@media (max-width: 1070px) {
+  .mobile-menu {
+    display: flex;
+  }
+}
+@media (max-width: 1070px){
+  nav ul li{
+    display: none;
+  }
+  nav ul li:last-child{
+    display: flex;
+  }
+}
 
+.mobile-nav {
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  transition: all .3s ease-in-out;
+  width: 100%;
+  z-index: 300;
+}
+.closed-menu {
+  left: -100% !important;
+}
+.open-menu {
+  left: 0 !important;
+}
+.mobile-nav span {
+  cursor: pointer;
+  font-size: 3.3rem;
+  position: absolute;
+  right: 4rem;
+  top: 2rem;
+}
+.mobile-nav ul {
+  display: flex;
+  flex-direction: column;
+  font-size: 2.3rem;
+  gap: 4rem;
+  list-style: none;
+}
+.mobile-nav ul a {
+  color: #000;
+  font-weight: 500;
+  text-decoration: none;
+}

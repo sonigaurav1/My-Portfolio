@@ -131,7 +131,7 @@ export default function Home() {
                   />
                 </li>
                 <li>
-                  <Image
+                  <img
                     src="https://skillicons.dev/icons?i=react,next"
                     alt="skill-icon"
                     width={50}
@@ -139,7 +139,7 @@ export default function Home() {
                   />
                 </li>
                 <li>
-                  <Image
+                  <img
                     src="https://skillicons.dev/icons?i=tailwind,github"
                     alt="skill-icon"
                     width={50}
@@ -147,7 +147,7 @@ export default function Home() {
                   />
                 </li>
                 <li>
-                  <Image
+                  <img
                     src="https://skillicons.dev/icons?i=vite,firebase"
                     alt="skill-icon"
                     width={50}

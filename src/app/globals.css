@@ -9,6 +9,7 @@ body {
   height: 100vh;
   width: 100vw;
   font-size: 62.5%;
+  font-family:  Poppins 'sans-serif';
   scroll-behavior: smooth;
 }
 
@@ -16,4 +17,9 @@ body {
   margin: 0 auto;
   max-width: 107rem;
   padding: 0 4rem;
+}
+@media (max-width: 460px) {
+  .container {
+    padding: 0 1.7rem;
+  }
 }

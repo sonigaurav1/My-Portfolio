@@ -1,8 +1,8 @@
-import './about.css'
-import Image from 'next/image';
+import "./about.css";
+import Image from "next/image";
 export default function About() {
   return (
-    <section id='about' className="about">
+    <section id="about" className="about">
       <div className="container">
         <div className="about-content">
           <div className="img-side">
@@ -10,21 +10,23 @@ export default function About() {
               src="/working-emoji.png"
               alt="emoji"
               class="work-emoji"
-              width={50}
-              height={50}
+              width={60}
+              height={60}
             />
             <Image
-              src="/about-img.webp"
+              src="/about-img.avif"
               alt="mee"
               class="img-side__main-img"
-              width={50}
-              height={50}
+              width={200}
+              height={500}
             />
             <span>
-              {/* <Image
-                src="/static/media/text2.3d5aa6ba2d0632bb4e0572631c3f9dc2.svg"
+              <Image
+                src="/web_developer_text.svg"
                 alt="text"
-              /> */}
+                width={200}
+                height={190}
+              />
             </span>
           </div>
           <div class="text-side">
@@ -33,8 +35,8 @@ export default function About() {
               Front-end Developer <br /> based in Ramdhuni, Nepal 📍
             </h4>
             <p>
-              Hey, my name is Gaurav, and I&apos;m a Frontend Developer. My passion
-              is to create and develop a clean UI/UX for my users.
+              Hey, my name is Gaurav, and I&apos;m a Frontend Developer. My
+              passion is to create and develop a clean UI/UX for my users.
               <br />
               <br />
               My main stack currently is React/Next.js in combination with

@@ -8,6 +8,14 @@ footer {
     display: flex;
     justify-content: space-between;
   }
+  @media (max-width: 550px) {
+    .footer__content {
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      text-align: center;
+    }
+  }
   footer h3 {
     color: #fff;
     font-size: 1.7rem;
