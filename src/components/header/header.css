@@ -65,7 +65,7 @@ nav ul a:hover{
   align-items: center;
   background-color: #fff;
   display: flex;
-  height: 100vh;
+  min-height: 100dvh;
   justify-content: center;
   left: 0;
   position: fixed;
