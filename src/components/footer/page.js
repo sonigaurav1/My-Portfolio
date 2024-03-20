@@ -56,7 +56,7 @@ export default function About() {
               aria-label="twitter"
               rel="noreferrer"
               target="_blank"
-              href="https://www.x.com/GauravSoni83453"
+              href="https://www.x.com/gauravwebdev_"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +73,7 @@ export default function About() {
               aria-label="instagram"
               rel="noreferrer"
               target="_blank"
-              href="https://www.instagram.com/gauravsoni123_official/"
+              href="https://www.instagram.com/gaurav.web.dev/"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
