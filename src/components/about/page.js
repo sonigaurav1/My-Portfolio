@@ -9,14 +9,14 @@ export default function About() {
             <Image
               src="/working-emoji.png"
               alt="emoji"
-              class="work-emoji"
+              className="work-emoji"
               width={60}
               height={60}
             />
             <Image
               src="/about-img.avif"
               alt="mee"
-              class="img-side__main-img"
+              className="img-side__main-img"
               width={200}
               height={500}
             />
@@ -29,7 +29,7 @@ export default function About() {
               />
             </span>
           </div>
-          <div class="text-side">
+          <div className="text-side">
             <h3>About me</h3>
             <h4>
               Front-end Developer <br /> based in Ramdhuni, Nepal 📍

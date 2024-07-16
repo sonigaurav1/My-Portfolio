@@ -4,13 +4,13 @@ export default function About() {
   return (
     <section id="contact" className="contact">
       <div className="container">
-        <div class="contact__content">
-          <div class="contact__title">
+        <div className="contact__content">
+          <div className="contact__title">
             <p>contact</p>
             <h3>Don&apos;t be shy! Hit me up! 👇</h3>
           </div>
-          <div class="contact__icons">
-            <div class="contact__icon-box">
+          <div className="contact__icons">
+            <div className="contact__icon-box">
               <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -19,10 +19,10 @@ export default function About() {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="tabler-icon tabler-icon-map-search"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="tabler-icon tabler-icon-map-search"
                 >
                   <path d="M11 18l-2 -1l-6 3v-13l6 -3l6 3l6 -3v7.5"></path>
                   <path d="M9 4v13"></path>
@@ -31,12 +31,12 @@ export default function About() {
                   <path d="M20.2 20.2l1.8 1.8"></path>
                 </svg>
               </span>
-              <div class="contact__info">
+              <div className="contact__info">
                 <h3>Location</h3>
                 <p>Ramdhuni, Nepal</p>
               </div>
             </div>
-            <div class="contact__icon-box">
+            <div className="contact__icon-box">
               <span>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -45,16 +45,16 @@ export default function About() {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="tabler-icon tabler-icon-mail"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="tabler-icon tabler-icon-mail"
                 >
                   <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z"></path>
                   <path d="M3 7l9 6l9 -6"></path>
                 </svg>
               </span>
-              <div class="contact__info">
+              <div className="contact__info">
                 <h3>Mail</h3>
                 <a href="mailto:gauravsoni7763@gmail.com">
                   gauravsoni7763@gmail.com

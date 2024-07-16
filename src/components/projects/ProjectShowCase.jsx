@@ -4,20 +4,19 @@ import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 const ProjectShowCase = ({ link, title, description, index }) => {
-  const [width, setWidth] = useState(window.innerWidth);
   const router = useRouter();
+  const [width, setWidth] = useState(1200);
 
   useEffect(() => {
+    setWidth(window.innerWidth);
+    const handleWidthChange = () => setWidth(window.innerWidth);
     window.addEventListener("resize", handleWidthChange);
-
-    return () => {
-      window.removeEventListener("resize", handleWidthChange);
-    };
+    return () => window.removeEventListener("resize", handleWidthChange);
   }, []);
 
-  const handleWidthChange = () => {
-    setWidth(window.innerWidth);
-  };
+  const flexDirection = width > 721 ? (index % 2 === 1 ? "row-reverse" : "row") : "column";
+  const padding = index % 2 === 1 ? "1rem 1rem 1rem 2rem" : "1rem 2rem 1rem 1rem";
+  const iframeWidth = width < 720 ? "100%" : "50%";
 
   return (
     <div
@@ -25,18 +24,16 @@ const ProjectShowCase = ({ link, title, description, index }) => {
         display: "flex",
         gap: "1rem",
         marginBottom: "5rem",
-        flexDirection:
-          width > 721 ? (index % 2 === 1 ? "row-reverse" : "row") : "column",
+        flexDirection,
       }}
     >
       <div
         style={{
-          width: width < 720 ? "100%" : "50%",
-          padding:
-            index % 2 === 1 ? "1rem 1rem 1rem 2rem" : "1rem 2rem 1rem 1rem",
+          width: iframeWidth,
+          padding,
         }}
       >
-        <h2 style={{ marginBottom: "1rem" }} class="new-projects">
+        <h2 style={{ marginBottom: "1rem" }} className="new-projects">
           <a
             style={{
               textDecorationStyle: "wavy",
@@ -66,18 +63,17 @@ const ProjectShowCase = ({ link, title, description, index }) => {
         onClick={() => router.push(link, "_blank")}
         style={{
           cursor: "pointer",
-          width: width < 720 ? "100%" : "50%",
+          width: iframeWidth,
           borderRadius: "1.3rem",
           border: "2px solid black",
           overflow: "hidden",
         }}
       >
         <iframe
-          onClick={() => router.push(link, "_blank")}
           style={{ height: "100%", minHeight: "400px", width: "100%" }}
           src={link}
-          frameborder="0"
-        ></iframe>
+          frameBorder="0"
+        />
       </div>
     </div>
   );
