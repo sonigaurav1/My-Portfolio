@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import "./ProjectShowCase.css";
 
 const ProjectShowCase = ({ link, title, description, index }) => {
   const router = useRouter();
@@ -14,8 +15,10 @@ const ProjectShowCase = ({ link, title, description, index }) => {
     return () => window.removeEventListener("resize", handleWidthChange);
   }, []);
 
-  const flexDirection = width > 721 ? (index % 2 === 1 ? "row-reverse" : "row") : "column";
-  const padding = index % 2 === 1 ? "1rem 1rem 1rem 2rem" : "1rem 2rem 1rem 1rem";
+  const flexDirection =
+    width > 721 ? (index % 2 === 1 ? "row-reverse" : "row") : "column";
+  const padding =
+    index % 2 === 1 ? "1rem 1rem 1rem 2rem" : "1rem 2rem 1rem 1rem";
   const iframeWidth = width < 720 ? "100%" : "50%";
 
   return (
@@ -69,11 +72,17 @@ const ProjectShowCase = ({ link, title, description, index }) => {
           overflow: "hidden",
         }}
       >
-        <iframe
-          style={{ height: "100%", minHeight: "400px", width: "100%" }}
-          src={link}
-          frameBorder="0"
-        />
+        <div className="iframe-container">
+          <div className="iframe-desktop-view">
+            <div className="iframe-content">
+              <iframe
+                style={{ height: "100%", minHeight: "400px", width: "100%" }}
+                src={link}
+                frameBorder="0"
+              />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
